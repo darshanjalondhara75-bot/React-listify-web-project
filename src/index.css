@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* Standardized Table Styles */
+.MuiTableContainer-root {
+  box-shadow: none !important;
+  border: 1px solid rgba(47, 43, 61, 0.12);
+  border-radius: 6px;
+}
+
+.MuiTableHead-root {
+  background-color: #F8F7FA;
+}
+
+.MuiTableCell-head {
+  color: var(--mainDark) !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  text-transform: uppercase;
+}
+
+.MuiTableCell-body {
+  color: var(--mainDark) !important;
+  font-size: 14px !important;
+  border-bottom: 1px solid rgba(47, 43, 61, 0.12) !important;
+}
+
+.MuiTableRow-root:last-child .MuiTableCell-body {
+  border-bottom: none !important;
+}
+
+/* Ensure no double padding if pages have their own containers inside wrapper */
+.page-content-wrapper>.MuiBox-root {
+  margin-top: 0 !important;
+}
+
+/* Fix for legacy layout wrappers */
+.ts-vertical-layout-content {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 100% !important;
+}
+
+/* Global Dialog Content Text Color */
+.MuiDialogContent-root {
+  color: var(--mainDark) !important;
+}
+
+.MuiDialogContent-root .MuiTypography-root {
+  color: var(--mainDark) !important;
+}
+
+.MuiDialogTitle-root {
+  color: var(--mainDark) !important;
+  font-weight: 500 !important;
+}
